@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:graphics_editor/screens/home_screen.dart';
 
 import 'components/painter.dart';
 

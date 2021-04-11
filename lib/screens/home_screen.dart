@@ -1,9 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:graphics_editor/components/draw_widget.dart';
-import 'package:graphics_editor/components/painter.dart';
 import 'package:graphics_editor/models/app_models.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -15,7 +13,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
   Color selectedColor = Colors.black;
   double strokeWidth = 3.0;
   List<DrawingPoints> points = List();
@@ -42,24 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      // IconButton(
-                      //     icon: Icon(Icons.arrow_right_alt_outlined),
-                      //     onPressed: () {
-                      //       setState(() {
-                      //         if (selectedMode == SelectedMode.StrokeWidth)
-                      //           showBottomList = !showBottomList;
-                      //         selectedMode = SelectedMode.StrokeWidth;
-                      //       });
-                      //     }),
-                      // IconButton(
-                      //     icon: Icon(Icons.opacity),
-                      //     onPressed: () {
-                      //       setState(() {
-                      //         if (selectedMode == SelectedMode.Opacity)
-                      //           showBottomList = !showBottomList;
-                      //         selectedMode = SelectedMode.Opacity;
-                      //       });
-                      //     }),
                       IconButton(
                           icon: Icon(Icons.color_lens),
                           onPressed: () {
