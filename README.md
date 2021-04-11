@@ -1,0 +1,1 @@
+# JetBrains-Internship2021-paint-app
